@@ -5,57 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nossa História s2</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="normalize.css" />
   </head>
   <body>
-      <div class="side-text">
-        <h1>Oi, Amor.</h1>
-        <p>
-          Aqui esta uma pequena surpresa que venho preparando para você à algum
-          tempo. Um contador que você pode acompanhar sempre que quiser, o inicio de quando fiz a melhor escolha da minha vida, que foi quando te olhei nos olhos e com toda a verdade do meu coração, te pedi em namoro. Espero que goste! Demorei um pouco para fazer, mas foi com
-          muito amor, carinho e dedicação para que ficasse perfeito. Como sabemos, passamos por muita coisa, e todas essas coisas passamos juntos, sem soltar a mão um do outro. Você é a pessoa mais incrível que eu já conheci, e eu sou muito grato por ter você na minha vida. Você me faz sentir especial, amado e feliz todos os dias. Eu te amo mais do que palavras podem expressar, e eu quero passar o resto da minha vida ao seu lado. Obrigado por ser minha namorada, minha melhor amiga e meu tudo. Eu te amo além do infinito, e vou te amar além dessa vida.
-        </p>
-        <br />
-        <h2>A GENTE TA JUNTO NESSA</h2>
-      </div>
+    <div class="side-text">
+      <h1>Oi, Amor.</h1>
+      <p>
+        Aqui esta uma pequena surpresa que venho preparando para você à algum
+        tempo. Um contador que você pode acompanhar sempre que quiser, o inicio
+        de quando fiz a melhor escolha da minha vida, que foi quando te olhei
+        nos olhos e com toda a verdade do meu coração, te pedi em namoro. Espero
+        que goste! Demorei um pouco para fazer, mas foi com muito amor, carinho
+        e dedicação para que ficasse perfeito. Como sabemos, passamos por muita
+        coisa, e todas essas coisas passamos juntos, sem soltar a mão um do
+        outro. Você é a pessoa mais incrível que eu já conheci, e eu sou muito
+        grato por ter você na minha vida. Você me faz sentir especial, amado e
+        feliz todos os dias. Eu te amo mais do que palavras podem expressar, e
+        eu quero passar o resto da minha vida ao seu lado. Obrigado por ser
+        minha namorada, minha melhor amiga e meu tudo. Eu te amo além do
+        infinito, e vou te amar além dessa vida.
+      </p>
+      <br />
+      <h2>A GENTE TA JUNTO NESSA</h2>
+    </div>
 
-      <div class="container">
-        <h1 class="gradient-text">❤Nós❤</h1>
-        <div class="carousel">
-          <img
-            src="assets\nossaprimeirafoto.jpg"
-            alt="Nossa primeira foto juntos"
-            id="assets"
-          />
-        </div>
-        <h2 class="gradient-text">Eu te amo faz</h2>
-        <div class="contador" id="contador" class="gradient-text"></div>
+    <div class="container">
+      <h1 class="gradient-text">❤Nós❤</h1>
+      <div class="carousel">
+        <img
+          src="assets\nossaprimeirafoto.jpg"
+          alt="Nossa primeira foto juntos"
+          id="assets"
+        />
       </div>
+      <h2 class="gradient-text">Eu te amo faz</h2>
+      <div class="contador" id="contador" class="gradient-text"></div>
+    </div>
 
-      <div class="right-text">
-        <h2>Informamos, caso sinta saudade, favor entrar em contato com: Neném❤❤</h2>
-        <p>
-          Número para contato: <br>
-          <a href="https://wa.me/5519999727893" target="_blank">19 999727893</a>
-        </p>
-      </div>
+    <div class="right-text">
+      <h2>
+        Informamos, caso sinta saudade, favor entrar em contato com: Neném❤❤
+      </h2>
+      <p>
+        Número para contato: <br />
+        <a href="https://wa.me/5519999727893" target="_blank">19 999727893</a>
+      </p>
+    </div>
 
-      <audio
-      id="musicaFundo"
-      src="musica/Youth (Sped Up) - Pixxy Lua (youtube).mp3"
-        controls
-        autoplay
-        loop
-    >
-      seu navegador não suporta o áudio.
-      
-    </audio>
+    <audio preload="metadata" autoplay controls loop>
+    <source src="musica/Youth (Sped Up) - Pixxy Lua (youtube).mp3" type="audio/mpeg" />
+    <source src="musica/Youth (Sped Up) - Pixxy Lua (youtube).ogg" type="audio/ogg" />
+    <source src="musica/Youth (Sped Up) - Pixxy Lua (youtube).wav" type="audio/wav" />
+      <p>seu navegador não suporta o áudio.</p>
+      <script>
+        document
+          .querySelector(".button")
+          .addEventListener("click", function () {
+            const musica = document.getElementById("musicaFundo")
+            musica.play()
+            musica.loop = true
+          })
+      </script>
+    </audio>
 
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
