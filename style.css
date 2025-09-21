@@ -1,0 +1,201 @@
+body {
+    background-image: url('assets/background.png');
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffe6f2;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center; /* AGORA ESTÁ CORRETO: Centraliza o conteúdo horizontalmente */
+    gap: 20px;
+    align-items: center;
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+.side-text {
+    left: 8%;
+    color: #fff;
+    max-width: 400px; /* Limita a largura máxima do texto lateral */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #383838d0; /* Fundo escuro com transparência */
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.849); /* Sombra mais destacada */
+    position: absolute; /* Permite posicionamento absoluto */
+}
+
+.side-text h2 {
+    font-size: 1.5em; /* Tamanho maior para o subtítulo */
+    margin-bottom: 20px; /* Espaço abaixo do subtítulo */
+    text-shadow: -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px 1px 0 #000,
+                 1px 1px 0 #000; /* Sombra preta para o texto */
+}
+
+.side-text p {
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    margin-bottom: 20px; /* Espaço abaixo dos parágrafos */
+}
+
+.container {
+    text-align: center; /* Centraliza o texto e os blocos internos */
+    padding: 30px; /* Espaçamento interno do container */
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.849); /* Sombra mais destacada */
+    max-width: 90%; /* Limita a largura máxima para se adaptar a telas menores */
+    width: 470px; /* Largura padrão do container */
+    display: flex; /* Usa flexbox para organizar os elementos internos */
+    flex-direction: column; /* Organiza itens em coluna */
+    align-items: center; /* Centraliza itens horizontalmente */
+    gap: 20px; /* Espaço entre os elementos dentro do container */
+    margin-top: -70px;/* Ajusta a margem superior para melhor posicionamento */
+    background: linear-gradient(45deg, #ff6ec550, #7773f550); /* Fundo branco para o container principal */;
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+h1 {
+    margin-bottom: 15px; /* Espaço abaixo do título */
+    font-size: 3em; /* Tamanho maior para o título */;
+}
+
+h2 {
+    margin-bottom: -10px;
+    font-size: 2em; /* Tamanho maior para o subtítulo */
+}
+
+.right-text {
+    color: #fff;
+    max-width: 400px; /* Limita a largura máxima do texto lateral */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #383838d0; /* Fundo escuro com transparência */
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.849); /* Sombra mais destacada */
+
+    position: absolute; /* Permite posicionamento absoluto */
+    right: 8%;
+    top: 20%;
+    transform: translateY(-20%);
+}
+
+.right-text h2 {
+    font-size: 1.4em; /* Tamanho maior para o subtítulo */
+    margin-bottom: 10px; /* Espaço abaixo do subtítulo */
+    text-shadow: -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px 1px 0 #000,
+                 1px 1px 0 #000; /* Sombra preta para o texto */
+}
+
+.right-text p,
+.right-text a {
+    font-size: 1.2em;
+    line-height: 2; /* Espaçamento entre linhas para melhor leitura */
+}
+
+.right-text a {
+    color: #ff8bd1;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg,#5c57fc, #ff3bb1); /* Gradiente rosa para o texto */
+    -webkit-background-clip: text; /* Clipa o fundo ao texto */
+    background-clip: text; /* Clipa o fundo ao texto */
+    color: transparent;
+}
+
+/* CARROSSEL - Contêiner das fotos */
+.carousel { 
+    width: 350px; /* Largura exata do contêiner do carrossel */
+    height: 600px; /* Altura exata do contêiner do carrossel */
+    overflow: hidden; /* Garante que nada saia do contêiner */
+    border-radius: 20px; /* Cantos arredondados para o contêiner */
+    box-shadow: 0 0 2px 6px rgba(0,0,0,0.9); /* Sombra para o contêiner */
+    display: flex; /* Usa flexbox para centralizar a imagem dentro dele */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #eee; /* Cor de fundo para o carrossel, caso a imagem não preencha */
+}
+
+.carousel img { 
+    width: 100%; /* A imagem vai ocupar 100% da largura do contêiner */
+    height: 100%; /* A imagem vai ocupar 100% da altura do contêiner */
+    object-fit: cover; /* Faz a imagem preencher o espaço, cortando se necessário */
+    border-radius: 20px; /* Mantém os cantos arredondados na imagem */
+}
+
+.contador {
+    font-size: 1.8em; /* Tamanho da fonte do contador */
+    margin-top: 10px;
+    font-weight: bold; /* Deixa o contador em negrito */
+    background: linear-gradient(45deg, #5c57fc, #ff3bb1); /* Gradiente rosa para o texto */
+    -webkit-background-clip: text; /* Clipa o fundo ao texto */
+    -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o gradiente */
+    background-clip: text; /* Clipa o fundo ao texto */
+    color: transparent;
+}
+
+/* Estilos para o áudio - opcional, mas útil para controle visual */
+audio {
+    margin-top: 25px;
+    width: 80%; /* Ajusta a largura do player de áudio */
+    max-width: 400px;
+}
+
+/* --- ESTILOS APENAS PARA TELAS MENORES QUE 600px --- */
+@media screen and (max-width: 600px) {
+
+    /* Ajusta o corpo da página para celular */
+    body {
+        justify-content: flex-start; /* Alinha o conteúdo ao topo da tela */
+        align-items: center;
+        flex-direction: column; /* Organiza os elementos em uma coluna */
+    }
+
+    /* Torna o container principal mais adequado para celular */
+    .container {
+        width: 90%; /* Agora a largura é 90% da tela */
+        margin-top: 50px; /* Adiciona uma margem superior para espaçar do topo */
+        padding: 20px;
+        order: 1; /* Garante que o container principal venha antes do texto lateral */
+    }
+
+    /* Agora o container de texto não é mais absoluto e se alinha abaixo do outro */
+    .side-text {
+        position: static; /* Volta o posicionamento para o padrão */
+        display: block; /* Garante que o elemento seja visível */
+        width: 90%; /* Ocupa 90% da largura da tela */
+        margin-top: 30px; /* Adiciona um espaço acima do texto */
+        padding: 20px;
+        order: 2; /* Garante que o texto venha após o container principal */
+    }
+
+    /* Diminui o tamanho do título e subtítulo para caber na tela */
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    .right-text {
+        position: static; /* Volta o posicionamento para o padrão */
+        display: block; /* Garante que o elemento seja visível */
+        width: 90%; /* Ocupa 90% da largura da tela */
+        margin-top: 50px; /* Adiciona um espaço acima do texto */
+        padding: 20px;
+        order: 3; /* Garante que o texto venha após o container principal */
+    }
+
+    /* Faz a foto ocupar toda a largura do container */
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+}
