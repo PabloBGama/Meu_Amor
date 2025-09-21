@@ -3,7 +3,7 @@ const fotos = [
   "assets/banheiroposformatura.jpg",
   "assets/diadoshopping1.jpg",
   "assets/diadoshopping2.jpg",
-  "assetS/diadoshopping2.2.2.jpg",
+  "assets/diadoshopping2.2.2.jpg",
   "assets/vceomio.jpg",
   "assets/vcsorrindodedourada.jpg",
   "assets/vctirandomaquiagem.jpg",
@@ -53,4 +53,5 @@ function atualizarContador() {
 atualizarContador();
 
 //atualiza a cada segundo
+
 setInterval(atualizarContador, 1000);
